@@ -71,6 +71,10 @@ a {
   background-size: cover;
   position: relative;
   overflow: hidden;
+  margin-top: 21px;
+}
+.burger {
+  display: none;
 }
 .text-box {
   max-width: 500px;
@@ -159,13 +163,31 @@ a {
   .hero-right {
     right: unset;
     left: -312px;
+    top: 538.59px;
   }
   .hero {
     padding: 115px 0 179px;
+    margin-top: 24px;
   }
   .text-box {
     max-width: 311px;
     width: 100%;
   }
-
+  .burger {
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar nav ul li {
+    display: none;
+  }
+  .hero-btn {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  
 }
