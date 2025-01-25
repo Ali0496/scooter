@@ -152,11 +152,22 @@ a {
   }
 }
 @media (max-width: 1113px) {
+  .hero {
+    padding: 137px 98px 217px;
+  }
   .hero-right {
     gap: calc(100vw - 510px);
   }
 }
-@media (max-width: 580px) {
+@media (max-width:768px) {
+  .hero {
+    padding: 137px 98px 217px;
+  }
+  .hero-right {
+    top: 480px;
+  }
+}
+@media (max-width: 680px) {
   .hero-right img:nth-child(2) {
     display: none;
   }
@@ -188,6 +199,12 @@ a {
     display: none;
   }
 }
-@media (max-width: 375px) {
-  
+@media (max-width: 420px) {
+  .hero {
+    padding: 115px 32px 179px;
+  }
+  .hero-right{
+    top: 610.59px;
+  }
+ 
 }
