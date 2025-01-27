@@ -202,6 +202,9 @@ a {
   transform: rotate(180deg);
   transition: transform 1000ms ease-in-out;
 }
+.q-box:hover {
+  background-color: rgba(255, 244, 223, 1);
+}
 .q-box input#inp2:checked ~ p {
   max-height: 80px !important;
   margin-top: 24px;
