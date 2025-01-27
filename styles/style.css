@@ -7,9 +7,12 @@
 
 :root {
   --yellow: rgba(252, 183, 43, 1);
-  --darknavy: rgba(73, 85, 103);
-  --dimgray: rgba(147, 156, 170);
+  --darknavy: rgba(73, 85, 103, 1);
+  --dimgray: rgba(147, 156, 170, 1);
+  --lightgray: rgba(242, 245, 249, 1);
   --white: rgba(255, 255, 255, 1);
+  --snow: rgba(242, 245, 249, 1);
+  --lightyellow: rgba(255, 244, 223, 1);
 }
 
 .container {
@@ -114,6 +117,22 @@ a {
   top: 354px;
 }
 
+/* STEPS */
+
+.steps {
+  padding-top: 160px;
+}
+
+.step-wrapper {
+  display: flex;
+}
+
+
+
+
+
+/* FAQ */
+
 .faq {
   padding: 120px 0 160px;
 }
@@ -160,7 +179,7 @@ a {
 }
 .q-box {
   padding: 32px 40px;
-  background-color: #f2f5f9;
+  background-color: var(--snow);
   position: relative;
   margin-bottom: 16px;
 }
@@ -173,14 +192,14 @@ a {
   line-height: 28px;
   letter-spacing: -1.0714285373687744px;
   text-align: left;
-  color: #495567;
+  color: var(--darknavy);
 }
 .q-box p {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
   text-align: left;
-  color: #495567;
+  color: var(--darknavy);
   max-height: 0;
   overflow: hidden;
   transition: all 1000ms ease;
@@ -203,7 +222,7 @@ a {
   transition: transform 1000ms ease-in-out;
 }
 .q-box:hover {
-  background-color: rgba(255, 244, 223, 1);
+  background-color: var(--lightyellow);
 }
 .q-box input#inp2:checked ~ p {
   max-height: 80px !important;
@@ -250,6 +269,7 @@ a {
   transform: rotate(180deg);
   transition: transform 1000ms ease-in-out;
 }
+
 @media (max-width: 1400px) {
   .hero-right {
     gap: 40px;
