@@ -120,7 +120,7 @@ a {
 /* STEPS */
 
 .steps {
-  padding: 160px 0 200px;
+  padding-top: 160px;
 }
 
 .step-wrapper {
@@ -178,7 +178,7 @@ a {
 /* FAQ */
 
 .faq {
-  padding: 120px 0 160px;
+  padding-top: 120px;
 }
 .faq h2 {
   font-size: 48px;
@@ -193,12 +193,10 @@ a {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 64px;
+  gap: 15px;
 }
-.faq-wrapper2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+.second-faq {
+  margin-top: 64px;
 }
 .faq-wrapper h3 {
   font-size: 40px;
@@ -208,14 +206,7 @@ a {
   text-align: left;
   color: #495567;
 }
-.faq-wrapper2 h3 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 48px;
-  letter-spacing: -1.7857142686843872px;
-  text-align: left;
-  color: #495567;
-}
+
 .faq-question-grid {
   max-width: 730px;
   width: 100%;
@@ -387,6 +378,16 @@ a {
     bottom: 40px;
     height: calc(400vh);
     width: 15px;
+  }
+  .faq-wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq-wrapper h3 {
+    margin-bottom: 17px;
+  }
+  .faq-question-grid {
+    max-width: 689px;
   }
 }
 @media (max-width: 690px) {
